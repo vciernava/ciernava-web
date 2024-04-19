@@ -2,28 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply bg-slate-900;
+    @apply text-white;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  ::selection {
+    @apply bg-slate-700;
+    @apply text-slate-200;
+  }
+
+  .micro-animated-link::after {
+    content: "";
+    @apply absolute;
+    @apply left-0;
+    @apply bottom-0;
+    @apply w-0;
+    @apply h-[1px];
+    @apply bg-teal-400;
+    @apply transition-all;
+    @apply duration-300;
+    @apply ease-in-out;
+  }
+
+  .micro-animated-link:hover::after {
+    @apply w-full;
+  }
+
+  .counting-heading::before {
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    @apply relative;
+    @apply mr-2;
+    @apply -bottom-1;
+    @apply text-teal-400;
+    @apply font-mono;
+    @apply font-normal;
+    @apply text-xl;
+  }
+
+  .counting-heading::after {
+    content: "";
+    @apply block;
+    @apply -top-1;
+    @apply ml-5;
+    @apply bg-slate-800;
+    @apply w-[300px];
+    @apply h-[1px];
+  }
 }
 
 @layer utilities {
