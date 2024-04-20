@@ -7,6 +7,7 @@
     @apply bg-slate-900;
     @apply text-slate-400;
     @apply text-base;
+    @apply scroll-smooth;
   }
 
   ::selection {
@@ -16,6 +17,7 @@
 
   p {
     @apply mb-4;
+    @apply text-pretty;
   }
 
   section {
@@ -26,6 +28,72 @@
 
   .section {
     counter-increment: section 1;
+  }
+
+  .styled-header {
+    @apply fixed;
+    @apply top-0;
+    @apply px-12;
+    @apply flex;
+    @apply justify-between;
+    @apply items-center;
+    @apply bg-slate-900/85;
+    @apply backdrop-blur-md;
+    @apply transition-all;
+    @apply ease-linear;
+    @apply w-full;
+    @apply h-[100px];
+    @apply z-20;
+  }
+
+  .styled-header.scrolled {
+    @apply h-[70px];
+    @apply translate-y-0;
+    @apply shadow-xl;
+  }
+
+  .styled-nav {
+    @apply relative;
+    @apply flex;
+    @apply justify-between;
+    @apply items-center;
+    @apply font-mono;
+    @apply text-sm;
+    @apply w-full;
+    @apply z-10;
+    counter-reset: item 0;
+  }
+
+  .styled-nav .nav-links ol {
+    @apply flex;
+    @apply justify-between;
+    @apply items-center;
+  }
+
+  .styled-nav .nav-links .nav-link {
+    @apply relative;
+    @apply mx-2;
+    counter-increment: item 1;
+  }
+
+  .styled-nav .nav-links .nav-link a {
+    @apply text-slate-300;
+    @apply p-2;
+    @apply text-sm;
+    @apply transition-colors;
+    @apply ease-in-out;
+    @apply duration-300;
+  }
+
+  .styled-nav .nav-links .nav-link a:hover {
+    @apply text-teal-400;
+  }
+
+  .styled-nav .nav-links .nav-link a::before {
+    content: "0" counter(item) ".";
+    @apply mr-2;
+    @apply text-teal-400;
+    @apply text-xs;
   }
 
   .micro-animated-link::after {
@@ -151,7 +219,6 @@
   .skills-list {
     @apply grid;
     @apply list-none;
-    @apply text-sm;
     grid-template-columns: repeat(2, minmax(140px, 200px));
     gap: 0px 10px;
     @apply mt-5;
@@ -161,6 +228,9 @@
     @apply flex;
     @apply items-center;
     @apply gap-2;
+    @apply font-mono;
+    @apply text-xs;
+    @apply mb-2;
   }
 
   .skills-list li svg {
