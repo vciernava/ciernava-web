@@ -5,12 +5,27 @@
 @layer base {
   body {
     @apply bg-slate-900;
-    @apply text-white;
+    @apply text-slate-400;
+    @apply text-base;
   }
 
   ::selection {
     @apply bg-slate-700;
     @apply text-slate-200;
+  }
+
+  p {
+    @apply mb-4;
+  }
+
+  section {
+    @apply mx-auto;
+    @apply py-[100px];
+    @apply max-w-[900px];
+  }
+
+  .section {
+    counter-increment: section 1;
   }
 
   .micro-animated-link::after {
@@ -31,7 +46,6 @@
   }
 
   .counting-heading::before {
-    counter-increment: section 1;
     content: "0" counter(section) ".";
     @apply relative;
     @apply mr-2;
@@ -48,8 +62,111 @@
     @apply -top-1;
     @apply ml-5;
     @apply bg-slate-800;
-    @apply w-[300px];
+    @apply flex-grow;
     @apply h-[1px];
+  }
+
+  .section-hero {
+    @apply min-h-screen;
+    @apply pb-0;
+  }
+
+  .section-hero h1 {
+    @apply mb-8;
+    @apply ml-1;
+    @apply text-teal-400;
+    @apply font-mono;
+    @apply text-lg;
+    @apply font-normal;
+  }
+
+  .section-hero h2 {
+    @apply text-slate-300;
+    @apply text-6xl;
+    @apply font-bold;
+  }
+
+  .section-hero h3 {
+    @apply mt-2;
+    @apply text-slate-400;
+    @apply text-6xl;
+    @apply font-bold;
+  }
+
+  .section-col-2 .inner {
+    @apply grid;
+    @apply gap-12;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .styled-picture {
+    @apply relative;
+    @apply max-w-[300px];
+    @apply aspect-square;
+  }
+
+  .styled-picture .wrapper {
+    @apply relative;
+    @apply bg-teal-400;
+    @apply rounded-[4px];
+    @apply w-full;
+    @apply h-full;
+  }
+
+  .styled-picture .wrapper::before {
+    content: "";
+    @apply absolute;
+    @apply top-0;
+    @apply left-0;
+    @apply bg-slate-900;
+    @apply mix-blend-screen;
+    @apply rounded-[4px];
+    @apply w-full;
+    @apply h-full;
+  }
+
+  .styled-picture .wrapper::after {
+    content: "";
+    @apply absolute;
+    @apply top-3;
+    @apply left-3;
+    @apply border-2;
+    @apply border-teal-400;
+    @apply rounded-[4px];
+    @apply w-full;
+    @apply h-full;
+    @apply -z-[1];
+  }
+
+  .styled-picture .wrapper img {
+    @apply mix-blend-multiply;
+    @apply grayscale;
+    @apply contrast-100;
+    @apply object-cover;
+    @apply rounded-[4px];
+    @apply w-full;
+    @apply h-full;
+  }
+
+  .skills-list {
+    @apply grid;
+    @apply list-none;
+    @apply text-sm;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    @apply mt-5;
+  }
+
+  .skills-list li {
+    @apply flex;
+    @apply items-center;
+    @apply gap-2;
+  }
+
+  .skills-list li svg {
+    @apply text-teal-400;
+    @apply h-3;
+    @apply w-3;
   }
 }
 
