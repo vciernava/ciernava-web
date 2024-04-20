@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
+import HrefLink from "./components/Link";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +21,19 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
           <Navigation />
+          <div className="styled-float left">
+            <div className="styled-socials">
+              <ul>
+                <li><HrefLink href="https://github.com/vciernava" className="after:hidden"><GitHubLogoIcon /></HrefLink></li>
+                <li><HrefLink href="https://cz.linkedin.com/in/vciernava" className="after:hidden"><LinkedInLogoIcon /></HrefLink></li>
+              </ul>
+            </div>
+          </div>
+          <div className="styled-float right">
+            <div className="styled-email">
+              <HrefLink href="mailto:kontakt@viktorciernava.eu" className="after:hidden">kontakt@viktorciernava.eu</HrefLink>
+            </div>
+          </div>
         {children}
         </body>
     </html>

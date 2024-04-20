@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    box-sizing: border-box
+  }
+  
   body {
     @apply bg-slate-900;
     @apply text-slate-400;
@@ -13,6 +17,11 @@
   ::selection {
     @apply bg-slate-700;
     @apply text-slate-200;
+  }
+
+  a::selection {
+    @apply text-slate-400;
+    @apply underline;
   }
 
   p {
@@ -94,6 +103,69 @@
     @apply mr-2;
     @apply text-teal-400;
     @apply text-xs;
+  }
+
+  .styled-float {
+    @apply w-10;
+    @apply fixed;
+    @apply bottom-0;
+    @apply z-10;
+    @apply text-slate-300;
+  }
+
+  .styled-float.right {
+    @apply left-auto;
+    @apply right-10;
+  }
+
+  .styled-float.left {
+    @apply right-auto;
+    @apply left-10;
+  }
+
+  .styled-email, .styled-socials {
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply relative;
+  }
+
+  .styled-email span a, .styled-socials span a {
+    writing-mode: vertical-rl;
+    letter-spacing: 0.1em;
+    @apply font-mono;
+    @apply text-xs;
+    @apply text-slate-400;
+    @apply my-5;
+    @apply p-2;
+    @apply transition-all;
+    @apply ease-in-out;
+    @apply duration-300;
+  }
+
+  .styled-socials ul {
+    @apply my-5;
+  }
+
+  .styled-socials span a {
+    @apply my-0;
+  }
+
+  .styled-socials span a svg {
+    @apply h-5;
+    @apply w-5;
+  }
+
+  .styled-email span a:hover, .styled-socials span a:hover {
+    @apply -translate-y-1;
+    @apply text-teal-400;
+  }
+
+  .styled-email::after, .styled-socials::after {
+    content: "";
+    @apply w-[2px];
+    @apply bg-slate-400;
+    @apply h-[90px];
   }
 
   .micro-animated-link::after {
@@ -179,6 +251,9 @@
     @apply rounded-[4px];
     @apply w-full;
     @apply h-full;
+    @apply transition-all;
+    @apply ease-in-out;
+    @apply duration-300;
   }
 
   .styled-picture .wrapper::before {
@@ -191,6 +266,9 @@
     @apply rounded-[4px];
     @apply w-full;
     @apply h-full;
+    @apply transition-all;
+    @apply ease-in-out;
+    @apply duration-300;
   }
 
   .styled-picture .wrapper::after {
@@ -204,6 +282,9 @@
     @apply w-full;
     @apply h-full;
     @apply -z-[1];
+    @apply transition-all;
+    @apply ease-in-out;
+    @apply duration-300;
   }
 
   .styled-picture .wrapper img {
@@ -214,6 +295,9 @@
     @apply rounded-[4px];
     @apply w-full;
     @apply h-full;
+    @apply transition-all;
+    @apply ease-in-out;
+    @apply duration-300;
   }
 
   .skills-list {

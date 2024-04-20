@@ -8,24 +8,24 @@ const useScrollAnimation = () => {
   useEffect(() => {
     if (!navRef.current) return;
 
-    let lastScrollTop = 0;
+    let lastScrollTop = 125;
 
     const handleScroll = () => {
       const st = window.pageYOffset || document.documentElement.scrollTop;
       if (st > lastScrollTop) {
         // Downscroll code
         gsap.to(navRef.current, { y: '-100%', duration: 0.3 });
-        if(st > 0) {
+        if(st > 125) {
             navRef.current?.classList.add('scrolled')
         }
       } else {
         // Upscroll code
         gsap.to(navRef.current, { y: '0%', duration: 0.3 });
-        if(st === 0) {
+        if(st < 125) {
             navRef.current?.classList.remove('scrolled')
         }
       }
-      lastScrollTop = st <= 0 ? 0 : st;
+      lastScrollTop = st <= 125 ? 125 : st;
     };
 
     window.addEventListener('scroll', handleScroll);
