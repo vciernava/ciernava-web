@@ -14,7 +14,7 @@ export default function Home() {
           <h1>Hi, my name is</h1>
           <h2>Viktor Čierňava. ✌️</h2>
           <h3>I build things for the web.</h3>
-          <p className="mt-8 mb-16 w-[500px]">I'm a software engineer out of Czech Republic specializing in building and designing exceptional digital experiences. Currently I am focused on building accessible products for business owners.</p>
+          <p className="mt-8 mb-16 w-[500px]">I&apos;m a software engineer out of Czech Republic specializing in building and designing exceptional digital experiences. Currently I am focused on building accessible products for business owners.</p>
           <Button href="/">Checkout my GitHub!</Button>
       </section>
       <section className="section section-col-2" id="about">
@@ -29,7 +29,7 @@ export default function Home() {
             </p>
             <p>Let talk a little bit personal, I have a lot of hobbies. One of them is learning new languages, like Japanese, Swedish and Spanish! I also like to play video games and watch videos about new technologies.</p>
             <p>
-              Here are a few technologies I've been working with recently:
+              Here are a few technologies I&apos;ve been working with recently:
             </p>
             <ul className="skills-list">
               <li><ChevronRightIcon /> Elixir</li>
@@ -51,13 +51,13 @@ export default function Home() {
         </div>
       </section>
       <section className="section" id="experience">
-        <CountingHeading>Where I've Worked</CountingHeading>
+        <CountingHeading>Where I&apos;ve Worked</CountingHeading>
         <div className="inner">
           
         </div>
       </section>
       <section className="section" id="projects">
-        <CountingHeading>Some Things I've Build</CountingHeading>
+        <CountingHeading>Some Things I&apos;ve Build</CountingHeading>
         <div className="inner">
           
         </div>
