@@ -1,6 +1,7 @@
 "use client";
 
 import useScrollAnimation from "../useScrollAnimation";
+import Button from "./Button";
 import HrefLink from "./Link";
 import NavLink from "./NavLink";
 
@@ -18,6 +19,7 @@ const Navigation = () => {
                 <NavLink href="#experience">Experience</NavLink>
                 <NavLink href="#projects">Projects</NavLink>
                 <NavLink href="#contact">Contact</NavLink>
+                <Button href='/' className="ml-2 text-sm px-4 py-2">Resume</Button>
               </ol>
             </div>
           </nav>

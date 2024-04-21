@@ -1,16 +1,21 @@
+"use client";
+
 import { ChevronRightIcon } from "@radix-ui/react-icons";
 import CountingHeading from "./components/CountingHeading";
 import HrefLink from "./components/Link";
 import Image from "next/image";
 import profilePic from './assets/MELP2883.jpg';
+import Button from "./components/Button";
 
 export default function Home() {
   return (
     <main className="min-h-screen container max-w-1600">
       <section className="section-hero" id="hero">
-        <h1>Hi, my name is</h1>
-        <h2>Viktor Čierňava. ✌️</h2>
-        <h3>I build things for the web.</h3>
+          <h1>Hi, my name is</h1>
+          <h2>Viktor Čierňava. ✌️</h2>
+          <h3>I build things for the web.</h3>
+          <p className="mt-8 mb-16 w-[500px]">I'm a software engineer out of Czech Republic specializing in building and designing exceptional digital experiences. Currently I am focused on building accessible products for business owners.</p>
+          <Button href="/">Checkout my GitHub!</Button>
       </section>
       <section className="section section-col-2" id="about">
         <CountingHeading>About me</CountingHeading>
@@ -22,6 +27,7 @@ export default function Home() {
             <p>
               Fast-forward to today, and I have the privilege to work at <HrefLink href="https://gamerhost.pro">an game hosting company</HrefLink>, <HrefLink href="https://etf2l.org">a esports community</HrefLink>, and <HrefLink href="https://tf2center.com">a small gaming community</HrefLink>.
             </p>
+            <p>Let talk a little bit personal, I have a lot of hobbies. One of them is learning new languages, like Japanese, Swedish and Spanish! I also like to play video games and watch videos about new technologies.</p>
             <p>
               Here are a few technologies I've been working with recently:
             </p>

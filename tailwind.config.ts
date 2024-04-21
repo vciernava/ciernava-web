@@ -17,9 +17,17 @@ const config: Config = {
           lg: '0px 25px',
         },
       },
+      boxShadow: {
+        'solid-button': '4px 4px 0 0'
+      }
     },
     maxWidth: {
       '1600': '1600px',
+    },
+  },
+  variants: {
+    extend: {
+      animation: ['hover', 'focus'],
     },
   },
   plugins: [],

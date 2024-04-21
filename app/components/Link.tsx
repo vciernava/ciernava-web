@@ -10,7 +10,7 @@ interface HrefLinkProps {
 }
 
 const HrefLink: React.FC<HrefLinkProps> = ({ href, className = '', children, externalLink }) => {
-    const linkClasses = `inline-block relative text-teal-400 micro-animated-link ${externalLink && 'pr-4'} ${className}`;
+    const linkClasses = `inline-block relative text-indigo-400 micro-animated-link ${externalLink && 'pr-4'} ${className}`;
 
     return (
         <span className={linkClasses}>

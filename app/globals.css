@@ -95,13 +95,13 @@
   }
 
   .styled-nav .nav-links .nav-link a:hover {
-    @apply text-teal-400;
+    @apply text-indigo-400;
   }
 
   .styled-nav .nav-links .nav-link a::before {
     content: "0" counter(item) ".";
     @apply mr-2;
-    @apply text-teal-400;
+    @apply text-indigo-400;
     @apply text-xs;
   }
 
@@ -158,7 +158,7 @@
 
   .styled-email span a:hover, .styled-socials span a:hover {
     @apply -translate-y-1;
-    @apply text-teal-400;
+    @apply text-indigo-400;
   }
 
   .styled-email::after, .styled-socials::after {
@@ -175,7 +175,7 @@
     @apply bottom-0;
     @apply w-0;
     @apply h-[1px];
-    @apply bg-teal-400;
+    @apply bg-indigo-400;
     @apply transition-all;
     @apply duration-300;
     @apply ease-in-out;
@@ -190,7 +190,7 @@
     @apply relative;
     @apply mr-2;
     @apply -bottom-1;
-    @apply text-teal-400;
+    @apply text-indigo-400;
     @apply font-mono;
     @apply font-normal;
     @apply text-xl;
@@ -214,7 +214,7 @@
   .section-hero h1 {
     @apply mb-8;
     @apply ml-1;
-    @apply text-teal-400;
+    @apply text-indigo-400;
     @apply font-mono;
     @apply text-lg;
     @apply font-normal;
@@ -247,7 +247,7 @@
 
   .styled-picture .wrapper {
     @apply relative;
-    @apply bg-teal-400;
+    @apply bg-indigo-600;
     @apply rounded-[4px];
     @apply w-full;
     @apply h-full;
@@ -277,7 +277,7 @@
     @apply top-3;
     @apply left-3;
     @apply border-2;
-    @apply border-teal-400;
+    @apply border-indigo-400;
     @apply rounded-[4px];
     @apply w-full;
     @apply h-full;
@@ -318,7 +318,7 @@
   }
 
   .skills-list li svg {
-    @apply text-teal-400;
+    @apply text-indigo-400;
     @apply h-3;
     @apply w-3;
   }
