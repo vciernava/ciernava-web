@@ -18,7 +18,7 @@ const Footer = () => {
               <HrefLink href="mailto:kontakt@viktorciernava.eu" className="after:hidden">kontakt@viktorciernava.eu</HrefLink>
             </div>
           </div>
-            <Link href="https://github.com/vciernava" className="text-center font-mono text-xs text-slate-300 hover:text-indigo-400 transition-colors duration-300 ease-in-out">
+            <Link href="https://github.com/vciernava/ciernava-web" className="text-center font-mono text-xs text-slate-300 hover:text-indigo-400 transition-colors duration-300 ease-in-out">
                 Designed & build by Viktor Čierňava<br />
                 with &#x3c;3 out of Czechia.
             </Link>
