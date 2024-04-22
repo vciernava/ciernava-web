@@ -1,6 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import smoothScroll from "../smoothscroll";
-import { MouseEvent } from "react";
+import { MouseEvent, useEffect, useState } from "react";
 
 interface NavLinkProps {
     href: string;
@@ -9,7 +11,24 @@ interface NavLinkProps {
 }
 
 const NavLink: React.FC<NavLinkProps> = ({href, className = '' ,children}) => {
-    const linkClass = `nav-link ${className}`;
+    const [isActive, setIsActive] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const targetElement = document.querySelector(href);
+        if (targetElement) {
+          const targetPosition = targetElement.getBoundingClientRect().top;
+          setIsActive(targetPosition >= 0 && targetPosition <= window.innerHeight);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, [href]);
+
+    const linkClass = `nav-link ${isActive ? 'active' : ''} ${className}`;
 
     const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();

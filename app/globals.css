@@ -94,7 +94,7 @@
     @apply duration-300;
   }
 
-  .styled-nav .nav-links .nav-link a:hover {
+  .styled-nav .nav-links .nav-link a:hover, .styled-nav .nav-links .nav-link.active a {
     @apply text-indigo-400;
   }
 
