@@ -100,7 +100,7 @@
   }
 
   .styled-nav .nav-links .nav-link a::before {
-    content: "0" counter(item) ".";
+    content: "[0" counter(item) "]";
     @apply mr-2;
     @apply text-indigo-400;
     @apply text-xs;
@@ -108,7 +108,7 @@
 
   .styled-float {
     @apply w-10;
-    @apply fixed;
+    @apply absolute;
     @apply bottom-0;
     @apply z-10;
     @apply text-slate-300;
@@ -187,7 +187,7 @@
   }
 
   .counting-heading::before {
-    content: "0" counter(section) ".";
+    content: "[0" counter(section) "]";
     @apply relative;
     @apply mr-2;
     @apply -bottom-1;
@@ -249,7 +249,6 @@
   .styled-picture .wrapper {
     @apply relative;
     @apply bg-indigo-600;
-    @apply rounded-[4px];
     @apply w-full;
     @apply h-full;
     @apply transition-all;
@@ -260,13 +259,13 @@
   .styled-picture .wrapper::before {
     content: "";
     @apply absolute;
-    @apply top-0;
-    @apply left-0;
-    @apply bg-slate-900;
-    @apply mix-blend-screen;
-    @apply rounded-[4px];
+    @apply top-2;
+    @apply left-2;
+    @apply border-2;
+    @apply border-indigo-400;
     @apply w-full;
     @apply h-full;
+    @apply -z-[1];
     @apply transition-all;
     @apply ease-in-out;
     @apply duration-300;
@@ -279,7 +278,6 @@
     @apply left-3;
     @apply border-2;
     @apply border-indigo-400;
-    @apply rounded-[4px];
     @apply w-full;
     @apply h-full;
     @apply -z-[1];
@@ -293,7 +291,6 @@
     @apply grayscale;
     @apply contrast-100;
     @apply object-cover;
-    @apply rounded-[4px];
     @apply w-full;
     @apply h-full;
     @apply transition-all;

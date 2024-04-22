@@ -1,11 +1,11 @@
 "use client";
 
-import { ChevronRightIcon } from "@radix-ui/react-icons";
-import CountingHeading from "./components/CountingHeading";
-import HrefLink from "./components/Link";
+import { SlashIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import profilePic from './assets/MELP2883.jpg';
 import Button from "./components/Button";
+import CountingHeading from "./components/CountingHeading";
+import HrefLink from "./components/Link";
 import Tabs from "./components/Tabs";
 import { TabsData } from "./data/tabsData";
 
@@ -34,12 +34,12 @@ export default function Home() {
               Here are a few technologies I&apos;ve been working with recently:
             </p>
             <ul className="skills-list">
-              <li><ChevronRightIcon /> Elixir</li>
-              <li><ChevronRightIcon /> TypeScript</li>
-              <li><ChevronRightIcon /> React</li>
-              <li><ChevronRightIcon /> Yarn</li>
-              <li><ChevronRightIcon /> Tailwind CSS</li>
-              <li><ChevronRightIcon /> WordPress</li>
+              <li><SlashIcon /> Elixir</li>
+              <li><SlashIcon /> TypeScript</li>
+              <li><SlashIcon /> React</li>
+              <li><SlashIcon /> Yarn</li>
+              <li><SlashIcon /> Tailwind CSS</li>
+              <li><SlashIcon /> WordPress</li>
             </ul>
           </div>
           <div className="styled-picture">

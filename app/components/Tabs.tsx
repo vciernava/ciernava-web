@@ -1,4 +1,4 @@
-import { ChevronRightIcon } from "@radix-ui/react-icons";
+import { SlashIcon } from "@radix-ui/react-icons";
 import { useEffect, useRef, useState } from "react";
 import { TabsDataProps } from "../data/tabsData";
 import HrefLink from "./Link";
@@ -50,9 +50,11 @@ const Tabs: React.FC<TabsProps> = ({data}) => {
                     </span>
                 ) : ''}</h3>
                 <p className="mt-1 font-mono text-sm">
-                    {items[selected].date.start.toLocaleString('en-US', {
+                    {items[selected].date.start.getFullYear() !== items[selected].date.end.getFullYear() ? items[selected].date.start.toLocaleString('en-US', {
                         month: 'long',
                         year: 'numeric'
+                    }) : items[selected].date.start.toLocaleString('en-US', {
+                        month: 'long'
                     })}
                     {' '}—{' '}
                     {items[selected].date.end.toDateString() !== new Date().toDateString() ? items[selected].date.end.toLocaleString('en-US', {
@@ -63,7 +65,7 @@ const Tabs: React.FC<TabsProps> = ({data}) => {
                 <ul className="mt-2">
                 {items[selected].description.map((item, index) => (
                     <li className="flex gap-4" key={index}>
-                        <ChevronRightIcon className="text-indigo-400 h-3 w-3 mt-1.5" />
+                        <SlashIcon className="text-indigo-400 h-3 w-3 mt-1.5" />
                         <p className="w-[600px]">{item}</p>
                         </li>
                 ))}
