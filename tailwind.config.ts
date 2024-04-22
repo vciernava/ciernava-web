@@ -17,6 +17,19 @@ const config: Config = {
           lg: '0px 25px',
         },
       },
+      animation: {
+        'fade-in': 'fade-in 300ms ease-in-out',
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': {
+            opacity: '0'
+          },
+          '100%': {
+            opacity: '1'
+          }
+        },
+      },
       boxShadow: {
         'solid-button': '4px 4px 0 0'
       }

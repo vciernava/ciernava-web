@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import smoothScroll from "../smoothscroll";
+import smoothScroll from "../utils/smoothscroll";
 import { MouseEvent, useEffect, useState } from "react";
 
 interface NavLinkProps {

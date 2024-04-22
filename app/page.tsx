@@ -6,6 +6,8 @@ import HrefLink from "./components/Link";
 import Image from "next/image";
 import profilePic from './assets/MELP2883.jpg';
 import Button from "./components/Button";
+import Tabs from "./components/Tabs";
+import { TabsData } from "./data/tabsData";
 
 export default function Home() {
   return (
@@ -53,7 +55,7 @@ export default function Home() {
       <section className="section" id="experience">
         <CountingHeading>Where I&apos;ve Worked</CountingHeading>
         <div className="inner">
-          
+          <Tabs data={TabsData} />
         </div>
       </section>
       <section className="section" id="projects">

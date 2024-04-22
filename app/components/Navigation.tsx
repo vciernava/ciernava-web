@@ -1,6 +1,6 @@
 "use client";
 
-import useScrollAnimation from "../useScrollAnimation";
+import useScrollAnimation from "../utils/useScrollAnimation";
 import Button from "./Button";
 import HrefLink from "./Link";
 import NavLink from "./NavLink";

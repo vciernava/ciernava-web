@@ -31,6 +31,7 @@
 
   section {
     @apply mx-auto;
+    @apply min-h-screen;
     @apply py-[100px];
     @apply max-w-[900px];
   }
@@ -321,6 +322,30 @@
     @apply text-indigo-400;
     @apply h-3;
     @apply w-3;
+  }
+
+  .tabs-items {
+    @apply relative;
+  }
+
+  .tabs-items .tabs-item {
+    @apply flex;
+    @apply items-center;
+    @apply font-mono;
+    @apply text-sm;
+    @apply px-6;
+    @apply border-l-2;
+    @apply border-slate-700;
+    @apply w-full;
+    @apply h-12;
+    @apply transition-colors;
+    @apply duration-300;
+    @apply ease-in-out;
+  }
+
+  .tabs-items .tabs-item:hover, .tabs-items .tabs-item.active {
+    @apply text-indigo-400;
+    @apply bg-slate-800;
   }
 }
 
