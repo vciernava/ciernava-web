@@ -13,7 +13,7 @@ export default function Home() {
       <section className="section-hero" id="hero">
           <h1>Hi, my name is</h1>
           <h2>Viktor Čierňava. ✌️</h2>
-          <h3>I build things for the web.</h3>
+          <h3>I build things on the web.</h3>
           <p className="mt-8 mb-16 w-[500px]">I&apos;m a software engineer out of Czech Republic specializing in building and designing exceptional digital experiences. Currently I am focused on building accessible products for business owners.</p>
           <Button href="/">Checkout my GitHub!</Button>
       </section>
