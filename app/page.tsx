@@ -17,7 +17,7 @@ export default function Home() {
           <h2>Viktor Čierňava. ✌️</h2>
           <h3>I build things on the web.</h3>
           <p className="mt-8 mb-16 w-[500px]">I&apos;m a software engineer out of Czech Republic specializing in building and designing exceptional digital experiences. Currently I am focused on building accessible products for business owners.</p>
-          <Button href="/">Checkout my GitHub!</Button>
+          <Button href="https://github.com/vciernava">Checkout my GitHub!</Button>
       </section>
       <section className="section section-col-2" id="about">
         <CountingHeading>About me</CountingHeading>
