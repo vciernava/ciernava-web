@@ -344,6 +344,10 @@
     @apply text-indigo-400;
     @apply bg-slate-800;
   }
+
+  .projects:hover .project-card:not(:hover) {
+    @apply opacity-40;
+  }
 }
 
 @layer utilities {

@@ -8,6 +8,8 @@ import CountingHeading from "./components/CountingHeading";
 import HrefLink from "./components/Link";
 import Tabs from "./components/Tabs";
 import { TabsData } from "./data/tabsData";
+import { ProjectsData } from "./data/projectsData";
+import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   return (
@@ -29,17 +31,17 @@ export default function Home() {
             <p>
               Fast-forward to today, and I have the privilege to work at <HrefLink href="https://gamerhost.pro">an game hosting company</HrefLink>, <HrefLink href="https://etf2l.org">a esports community</HrefLink>, and <HrefLink href="https://tf2center.com">a small gaming community</HrefLink>.
             </p>
-            <p>Let talk a little bit personal, I have a lot of hobbies. One of them is learning new languages, like Japanese, Swedish and Spanish! I also like to play video games and watch videos about new technologies.</p>
+            <p>Let talk a little bit personal, I have lots of hobbies. One of them is learning new languages, like Japanese, Swedish and Spanish! I also like to play video games and watch videos about new technologies.</p>
             <p>
               Here are a few technologies I&apos;ve been working with recently:
             </p>
             <ul className="skills-list">
-              <li><SlashIcon /> Elixir</li>
               <li><SlashIcon /> TypeScript</li>
               <li><SlashIcon /> React</li>
-              <li><SlashIcon /> Yarn</li>
               <li><SlashIcon /> Tailwind CSS</li>
-              <li><SlashIcon /> WordPress</li>
+              <li><SlashIcon /> Elixir</li>
+              <li><SlashIcon /> Java</li>
+              <li><SlashIcon /> PHP</li>
             </ul>
           </div>
           <div className="styled-picture">
@@ -61,7 +63,15 @@ export default function Home() {
       <section className="section" id="projects">
         <CountingHeading>Some Things I&apos;ve Build</CountingHeading>
         <div className="inner">
-          
+          <div className="projects grid gap-3 grid-cols-3">
+          {
+            ProjectsData.map(
+              project => (
+                <ProjectCard key={project.id} title={project.title} url={project.url} badges={project.badges} type={project.type} description={project.description} />
+              )
+            )
+          }
+          </div>
         </div>
       </section>
     </main>
