@@ -4,9 +4,9 @@
 
 @layer base {
   * {
-    box-sizing: border-box
+    box-sizing: border-box;
   }
-  
+
   body {
     @apply bg-slate-900;
     @apply text-slate-400;
@@ -31,7 +31,7 @@
 
   section {
     @apply mx-auto;
-    @apply min-h-screen;
+    @apply min-h-[80vh];
     @apply py-[100px];
     @apply max-w-[900px];
   }
@@ -95,12 +95,13 @@
     @apply duration-300;
   }
 
-  .styled-nav .nav-links .nav-link a:hover, .styled-nav .nav-links .nav-link.active a {
+  .styled-nav .nav-links .nav-link a:hover,
+  .styled-nav .nav-links .nav-link.active a {
     @apply text-indigo-400;
   }
 
   .styled-nav .nav-links .nav-link a::before {
-    content: "[0" counter(item) "]";
+    content: '[0' counter(item) ']';
     @apply mr-2;
     @apply text-indigo-400;
     @apply text-xs;
@@ -124,14 +125,16 @@
     @apply left-10;
   }
 
-  .styled-email, .styled-socials {
+  .styled-email,
+  .styled-socials {
     @apply flex;
     @apply flex-col;
     @apply items-center;
     @apply relative;
   }
 
-  .styled-email span a, .styled-socials span a {
+  .styled-email span a,
+  .styled-socials span a {
     writing-mode: vertical-rl;
     letter-spacing: 0.1em;
     @apply font-mono;
@@ -157,20 +160,22 @@
     @apply w-5;
   }
 
-  .styled-email span a:hover, .styled-socials span a:hover {
+  .styled-email span a:hover,
+  .styled-socials span a:hover {
     @apply -translate-y-1;
     @apply text-indigo-400;
   }
 
-  .styled-email::after, .styled-socials::after {
-    content: "";
+  .styled-email::after,
+  .styled-socials::after {
+    content: '';
     @apply w-[2px];
     @apply bg-slate-400;
     @apply h-[90px];
   }
 
   .micro-animated-link::after {
-    content: "";
+    content: '';
     @apply absolute;
     @apply left-0;
     @apply bottom-0;
@@ -187,7 +192,7 @@
   }
 
   .counting-heading::before {
-    content: "[0" counter(section) "]";
+    content: '[0' counter(section) ']';
     @apply relative;
     @apply mr-2;
     @apply -bottom-1;
@@ -198,7 +203,7 @@
   }
 
   .counting-heading::after {
-    content: "";
+    content: '';
     @apply block;
     @apply -top-1;
     @apply ml-5;
@@ -208,7 +213,7 @@
   }
 
   .section-hero {
-    @apply min-h-screen;
+    @apply min-h-[90vh];
     @apply pb-0;
   }
 
@@ -257,7 +262,7 @@
   }
 
   .styled-picture .wrapper::before {
-    content: "";
+    content: '';
     @apply absolute;
     @apply top-2;
     @apply left-2;
@@ -272,7 +277,7 @@
   }
 
   .styled-picture .wrapper::after {
-    content: "";
+    content: '';
     @apply absolute;
     @apply top-3;
     @apply left-3;
@@ -340,7 +345,8 @@
     @apply ease-in-out;
   }
 
-  .tabs-items .tabs-item:hover, .tabs-items .tabs-item.active {
+  .tabs-items .tabs-item:hover,
+  .tabs-items .tabs-item.active {
     @apply text-indigo-400;
     @apply bg-slate-800;
   }
