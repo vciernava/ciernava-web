@@ -76,5 +76,21 @@ export const TabsData: TabsDataProps[] = [
             "I build and manage internal software of the company that allows clients to view their purchased products and manage them.",
             "I also design the company branding, to give clients more trustful and easier UI and UX, when using the internal tools or ordering new products."
         ]
+    },
+    {
+        id: 4,
+        date: {
+            start: new Date(2024, 5),
+            end: new Date()
+        },
+        position: "Software Engineer",
+        company: {
+            name: "Lemenio",
+            website: "https://lemenio.com/"
+        },
+        description: [
+            "I am part of the team that is creating a new web solutions for clients, that are looking for a new way to manage their business.",
+            "I use Symfony with React to create the most efficient and user friendly software for our clients."
+        ]
     }
 ]

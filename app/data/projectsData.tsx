@@ -43,5 +43,17 @@ export const ProjectsData: ProjectsDataProps[] = [
         ],
         type: "repo",
         description: "The result of an React course, where I created an website to display infinite loading list of anime shows using TypeScript and external API to load the data on the page."
+    },
+    {
+        id: 3,
+        title: "Proxylo Panel",
+        url: "https://github.com/Proxylo",
+        badges: [
+            "PHP",
+            "React",
+            "GoLang"
+        ],
+        type: "repo",
+        description: "Open-source panel solution allows you to host a variety of services and games from a single, user-friendly interface. Easily scalable between multiple servers."
     }
 ]
