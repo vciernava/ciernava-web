@@ -40,10 +40,6 @@ export default function Home() {
             </p>
             <p>
               Fast-forward to today, and I have the privilege to work at{' '}
-              <HrefLink href='https://gamerhost.pro'>
-                an game hosting company
-              </HrefLink>
-              ,{' '}
               <HrefLink href='https://etf2l.org'>a esports community</HrefLink>,
               and{' '}
               <HrefLink href='https://tf2center.com'>
