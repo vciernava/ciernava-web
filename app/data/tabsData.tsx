@@ -64,22 +64,6 @@ export const TabsData: TabsDataProps[] = [
     {
         id: 3,
         date: {
-            start: new Date(2024, 3),
-            end: new Date()
-        },
-        position: "Software Engineer",
-        company: {
-            name: "GamerHost",
-            website: "https://gamerhost.pro/"
-        },
-        description: [
-            "I build and manage internal software of the company that allows clients to view their purchased products and manage them.",
-            "I also design the company branding, to give clients more trustful and easier UI and UX, when using the internal tools or ordering new products."
-        ]
-    },
-    {
-        id: 4,
-        date: {
             start: new Date(2024, 5),
             end: new Date()
         },
