@@ -1,10 +1,11 @@
 'use client';
 
 import useScrollAnimation from '../utils/useScrollAnimation';
-import Badge from './Badge';
 import Button from './Button';
 import HrefLink from './Link';
 import NavLink from './NavLink';
+import logo from '../assets/logo.png';
+import Image from 'next/image';
 
 const Navigation = () => {
   const navRef = useScrollAnimation();
@@ -12,9 +13,8 @@ const Navigation = () => {
     <header ref={navRef} className='styled-header'>
       <nav className='styled-nav'>
         <HrefLink href='/' className='after:hidden'>
-          <div className='bg-slate-950 h-12 w-12'></div>
+          <Image src={logo} alt='My logo' height={64} width={64} />
         </HrefLink>
-        <Badge>This website is still under development</Badge>
         <div className='nav-links'>
           <ol>
             <NavLink href='#about'>About</NavLink>

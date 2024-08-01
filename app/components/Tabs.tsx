@@ -11,7 +11,7 @@ interface TabsProps {
 const Tabs: React.FC<TabsProps> = ({data}) => {
     const [selected, setSelected] = useState(0);
     const contentRef = useRef<HTMLDivElement>(null);
-    const buttonHeight = 48;
+    const buttonHeight = 42;
     const items = data.toReversed();
 
     useEffect(() => {

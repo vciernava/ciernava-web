@@ -18,7 +18,21 @@ export const metadata: Metadata = {
     "typescript",
     "react",
     "elixir"
-  ]
+  ],
+  icons: [
+    {
+      rel: "icon",
+      url: "./assets/favicon/favicon.ico",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "./assets/favicon/apple-touch-icon.png",
+    },
+    {
+      rel: "manifest",
+      url: "./assets/favicon/site.webmanifest",
+    },
+  ],
 };
 
 export default function RootLayout({

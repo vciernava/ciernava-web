@@ -40,12 +40,8 @@ export default function Home() {
             </p>
             <p>
               Fast-forward to today, and I have the privilege to work at{' '}
-              <HrefLink href='https://etf2l.org'>a esports community</HrefLink>,
-              and{' '}
-              <HrefLink href='https://tf2center.com'>
-                a small gaming community
-              </HrefLink>
-              .
+              <HrefLink href='https://lemenio.com'>a great company</HrefLink>,
+              while being able to build my own startup on the side.
             </p>
             <p>
               Let talk a little bit personal, I have lots of hobbies. One of
@@ -95,6 +91,7 @@ export default function Home() {
         <div className='inner'>
           <div className='projects grid gap-3 grid-cols-3'>
             {ProjectsData.map((project) => (
+              !project.hidden &&
               <ProjectCard
                 key={project.id}
                 title={project.title}

@@ -4,7 +4,7 @@ import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 const Footer = () => {
     return (
-        <footer className="relative flex items-center justify-center w-full py-[50px]">
+        <footer className="relative flex items-center justify-center w-full py-[50px]" id="contact">
                       <div className="styled-float left">
             <div className="styled-socials">
               <ul>
