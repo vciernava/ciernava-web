@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           <div className="styled-float right">
             <div className="styled-email">
-              <HrefLink href="mailto:kontakt@viktorciernava.eu" className="after:hidden">kontakt@viktorciernava.eu</HrefLink>
+              <HrefLink href="mailto:hello@ciernava.cz" className="after:hidden">hello@ciernava.cz</HrefLink>
             </div>
           </div>
             <Link href="https://github.com/vciernava/ciernava-web" className="text-center font-mono text-xs text-slate-300 hover:text-indigo-400 transition-colors duration-300 ease-in-out">
