@@ -41,9 +41,7 @@ export default function Home() {
               theme gives you a lot of opportunities.
             </p>
             <p>
-              Fast-forward to today, and I have the privilege to work at{' '}
-              <HrefLink href='https://lemenio.com'>a great company</HrefLink>,
-              while being able to build my own startup on the side.
+              Fast-forward to today, I am working on my own projects while being able to maintain my social life on the side.
             </p>
             <p>
               Let talk a little bit personal, I have lots of hobbies. One of
