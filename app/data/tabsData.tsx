@@ -65,7 +65,7 @@ export const TabsData: TabsDataProps[] = [
         id: 3,
         date: {
             start: new Date(2024, 5),
-            end: new Date(2024, 9)
+            end: new Date(2024, 8)
         },
         position: "Software Engineer",
         company: {
