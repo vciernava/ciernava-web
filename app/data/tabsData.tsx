@@ -65,7 +65,7 @@ export const TabsData: TabsDataProps[] = [
         id: 3,
         date: {
             start: new Date(2024, 5),
-            end: new Date()
+            end: new Date(2024, 9)
         },
         position: "Software Engineer",
         company: {
@@ -73,8 +73,8 @@ export const TabsData: TabsDataProps[] = [
             website: "https://lemenio.com/"
         },
         description: [
-            "I am part of the team that is creating a new web solutions for clients, that are looking for a new way to manage their business.",
-            "I use Symfony with React to create the most efficient and user friendly software for our clients."
+            "I was part of the team that is creating a new web solutions for clients, that are looking for a new way to manage their business.",
+            "I used Symfony with React to create the most efficient and user friendly software for company clients."
         ]
     }
 ]
